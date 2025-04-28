@@ -1,20 +1,39 @@
-import { createContext } from "react";
+import { useState } from "react";
+import { StoreContext } from "./StoreContext"; // sadece Context import ediyorsun
 import { food_list } from "../assets/assets";
-export const StoreContext=createContext(null)
+import PropTypes from 'prop-types'; 
 
-const StoreContextProvider=(props)=>{
+const StoreContextProvider = (props) => {
+  const [cartItems, setCartItems] = useState({});
 
+  const addToCart = (itemId) => {
+    if (!cartItems[itemId]) {
+      setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
+    } else {
+      setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    }
+  };
 
+  const removeFromCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+  };
 
-const contextValue={
-food_list 
-}
-return(
-<StoreContext.Provider value={contextValue}>
-{props.children}
+  const contextValue = {
+    food_list,
+    cartItems,
+    addToCart,
+    removeFromCart
+  };
 
-</StoreContext.Provider>
-)
+  return (
+    <StoreContext.Provider value={contextValue}>
+      {props.children}
+    </StoreContext.Provider>
+  );
+};
 
-}
-export default StoreContextProvider
+StoreContextProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default StoreContextProvider;

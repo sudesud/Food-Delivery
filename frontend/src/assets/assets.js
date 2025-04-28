@@ -31,14 +31,17 @@ export const food_list=[
     image:menu_6,
     price:12,
     description:"Mevsim yeşillikleriyle yapılmış salata",
-    category:"Salad" }
-// {
-//     _id:"2",
-//     name:"Kebab Salad",
-//     image:food_2,
-//     description:"Mevsim yeşillikleriyle yapılmış salata",
-//     category:"Deserts"
-// },{
+    category:"Salad" 
+},
+{
+    _id:"2",
+    name:"Kebab Salad",
+    image:menu_3,
+    price:33,
+    description:"Mevsim yeşillikleriyle yapılmış salata",
+    category:"Salad"
+}
+//{
 //     _id:"3",
 //     name:"kek Salad",
 //     image:food_3,
