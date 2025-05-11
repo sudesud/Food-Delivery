@@ -16,6 +16,8 @@ const FoodDisplay = ({ category }) => {
       <h2>Top Dishes near you</h2>
       <div className="food-display-list">
         {filteredFoodList.map((item, index) => (
+          
+
           <FoodItem
             key={index}
             id={item._id}

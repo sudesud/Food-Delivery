@@ -4,14 +4,18 @@ import basket_icon from "./basket_icon.png";
 import add_icon_green from "./add_icon_green.png";
 import add_icon_white from "./add_icon_white.png";
 import remove_icon_red from "./remove_icon_red.png";
+import face_icon from "./face_icon.png";
+import insta_icon from "./insta_icon.png";
+import x_icon from "./x_icon.png";
+import play_store from "./play_store.png";
+import app_store from "./app_store.png";
 
 import menu_1 from './menu_1.jpg'
-
 import menu_3 from './menu_3.jpg'
 import menu_4 from './menu_4.jpg'
 import menu_5 from './menu_5.jpg'
 import menu_6 from './menu_6.jpg'
-
+import food_3 from './food_3.jpg'
 
 
 export const assets={ logo,
@@ -19,7 +23,12 @@ export const assets={ logo,
     basket_icon,
     add_icon_green,
     add_icon_white,
-    remove_icon_red
+    remove_icon_red,
+    face_icon,
+    x_icon,
+    insta_icon,
+    play_store,
+    app_store
     
 
  }; // Export ederek diğer dosyalarda kullanabilir hale getiriyoruz
@@ -40,15 +49,15 @@ export const food_list=[
     price:33,
     description:"Mevsim yeşillikleriyle yapılmış salata",
     category:"Salad"
+},
+{
+    _id:"3",
+    name:"kek Salad",
+    image:food_3,
+    price:23,
+    description:"Mevsim yeşillikleriyle yapılmış salata",
+    category:"Cake"
 }
-//{
-//     _id:"3",
-//     name:"kek Salad",
-//     image:food_3,
-//     description:"Mevsim yeşillikleriyle yapılmış salata",
-//     category:"Cake"
-// }
-
 
 ]
 
