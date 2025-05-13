@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { food_list } from "../assets/assets";
 import PropTypes from "prop-types";
 
@@ -33,11 +33,17 @@ const StoreContextProvider = ({ children }) => {
       return updated;
     });
   };
-  console.log("🔥 StoreContext çalıştı");
-  // 5. Değişikliği izleme (yalnızca değiştiğinde loglasın)
-  useEffect(() => {
-    console.log("🛒 Güncel sepet durumu:", cartItems);
-  }, [cartItems]);
+ const getTotalCartAmount=()=>{
+  let totalAmount=0;
+  for(const item in cartItems){
+    if(cartItems[item]>0){
+      let itemInfo=food_list.find((product)=>product._id===item);
+      totalAmount+=itemInfo.price*cartItems[item];
+    }
+    
+  }
+    return totalAmount;
+ }
 
   // 6. Context değeri
   const contextValue = {
@@ -45,6 +51,7 @@ const StoreContextProvider = ({ children }) => {
     cartItems,
     addToCart,
     removeFromCart,
+    getTotalCartAmount
   };
 
   return (
