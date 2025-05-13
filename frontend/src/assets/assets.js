@@ -9,6 +9,7 @@ import insta_icon from "./insta_icon.png";
 import x_icon from "./x_icon.png";
 import play_store from "./play_store.png";
 import app_store from "./app_store.png";
+import closs_icon from "./close_icon.png"
 
 import menu_1 from './menu_1.jpg'
 import menu_3 from './menu_3.jpg'
@@ -28,7 +29,8 @@ export const assets={ logo,
     x_icon,
     insta_icon,
     play_store,
-    app_store
+    app_store,
+    closs_icon
     
 
  }; // Export ederek diğer dosyalarda kullanabilir hale getiriyoruz
