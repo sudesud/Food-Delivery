@@ -1,6 +1,6 @@
-import { createContext, useState } from "react";
-import { food_list } from "../assets/assets";
+import { createContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import axios from "axios";
 
 // 1. Context oluştur
 export const StoreContext = createContext(null);
@@ -8,6 +8,9 @@ export const StoreContext = createContext(null);
 // 2. Provider bileşeni
 const StoreContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState({});
+  const url="http://localhost:4000"
+  const [token,setToken]=useState("");
+  const [food_list,setFoodList]=useState([])
 
   // 3. Sepete ekleme
   const addToCart = (itemId) => {
@@ -45,13 +48,34 @@ const StoreContextProvider = ({ children }) => {
     return totalAmount;
  }
 
+ const fetchFoodList=async()=>{
+  const response=await axios.get(url+"/api/food/list");
+  setFoodList(response.data.data)
+ }
+
+ useEffect(()=>{
+    
+   async function loadData(){
+    await fetchFoodList()
+    if(localStorage.getItem("token")){
+      setToken(localStorage.getItem("token"))
+    }
+   }
+   loadData();
+
+ },[])
+
   // 6. Context değeri
   const contextValue = {
     food_list,
     cartItems,
     addToCart,
     removeFromCart,
-    getTotalCartAmount
+    getTotalCartAmount,
+    url,
+    token,
+    setToken
+
   };
 
   return (
