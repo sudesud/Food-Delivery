@@ -21,6 +21,7 @@ import menu_4 from './menu_4.jpg'
 import menu_5 from './menu_5.jpg'
 import menu_6 from './menu_6.jpg'
 import food_3 from './food_3.jpg'
+import menu_2 from "./menu_2.jpg"
 
 
 export const assets={ logo,
@@ -74,26 +75,26 @@ export const food_list=[
 
  export const menu_list=[
 {
-    menu_name:"Salad",
+    menu_name:"Meat",
     menu_image:menu_1
 
 },
 
 {
-    menu_name:"Deserts",
+    menu_name:"Desserts",
+    menu_image:menu_2
+},
+{
+    menu_name:"Hamburger",
     menu_image:menu_3
 },
 {
-    menu_name:"Sandwich",
+    menu_name:"Pizza",
     menu_image:menu_4
 },
 {
-    menu_name:"Cake",
-    menu_image:menu_5
-},
-{
     menu_name:"Pasta ",
-    menu_image:menu_6
+    menu_image:menu_5
 }
 
 
