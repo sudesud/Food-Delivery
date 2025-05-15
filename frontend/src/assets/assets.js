@@ -13,6 +13,7 @@ import closs_icon from "./close_icon.png"
 import user_profile from "./user_profile.png"
 import bag_icon from "./bag_icon.png"
 import logout_icon from "./logout_icon.png"
+import packet_icon from "./packet_icon.png"
 
 import menu_1 from './menu_1.jpg'
 import menu_3 from './menu_3.jpg'
@@ -36,7 +37,8 @@ export const assets={ logo,
     closs_icon,
     user_profile,
     bag_icon,
-    logout_icon
+    logout_icon,
+    packet_icon
     
 
  }; // Export ederek diğer dosyalarda kullanabilir hale getiriyoruz

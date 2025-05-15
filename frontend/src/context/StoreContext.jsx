@@ -13,29 +13,31 @@ const StoreContextProvider = ({ children }) => {
   const [food_list,setFoodList]=useState([])
 
   // 3. Sepete ekleme
-  const addToCart = (itemId) => {
-    setCartItems((prev) => {
-      const updated = {
-        ...prev,
-        [itemId]: prev[itemId] ? prev[itemId] + 1 : 1,
-      };
-      console.log("➕ Sepete eklendi:", updated);
-      return updated;
-    });
+   const addToCart = async (itemId) => {
+    if (!cartItems[itemId]) {
+      // Eğer item daha önce eklenmemişse, sepete 1 ekliyoruz
+      setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
+    } else {
+      // Eğer item zaten varsa, miktarını arttırıyoruz
+      setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    }
+    if(token){
+      await axios.post(url+"/api/cart/add",{itemId},{headers:{token}})
+    }
   };
 
   // 4. Sepetten çıkarma
-  const removeFromCart = (itemId) => {
-    setCartItems((prev) => {
-      if (!prev[itemId]) return prev;
-      const updated = {
-        ...prev,
-        [itemId]: prev[itemId] - 1,
-      };
-      console.log("➖ Sepetten çıkarıldı:", updated);
-      return updated;
-    });
+  const removeFromCart = async (itemId) => {
+    // Eğer item sepetteyse, miktarını azaltıyoruz
+    setCartItems((prev) => ({
+      ...prev,
+      [itemId]: prev[itemId] - 1,
+    }));
+    if(token){
+      await axios.post(url+"/api/cart/remove",{itemId},{headers:{token}})
+    }
   };
+
  const getTotalCartAmount=()=>{
   let totalAmount=0;
   for(const item in cartItems){
@@ -52,13 +54,18 @@ const StoreContextProvider = ({ children }) => {
   const response=await axios.get(url+"/api/food/list");
   setFoodList(response.data.data)
  }
+      // const loadCartData=async (token)=>{
+      //   const response=await axios.post(url+"/api/cart/get",{},{headers:{token}});
+      //   setCartItems(response.data.cartData);
+      // }
 
  useEffect(()=>{
     
    async function loadData(){
     await fetchFoodList()
     if(localStorage.getItem("token")){
-      setToken(localStorage.getItem("token"))
+      setToken(localStorage.getItem("token"));
+      // await loadCartData(localStorage.getItem("token"));
     }
    }
    loadData();
