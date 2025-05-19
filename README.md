@@ -33,11 +33,21 @@ Sipariş listesini görüntüleme
 
 Sipariş durumunu güncelleme (Hazırlanıyor → Yola Çıktı → Teslim Edildi)
 
-📸 Ekran Görüntüleri![Ekran görüntüsü 2025-05-19 174753](https://github.com/user-attachments/assets/bb7e785c-4c59-4b35-a4![Ekran görüntüsü 2025-05-19 175215](https://github.com/user-attachments/assets/db86ab3e-7f44-4ebd-9e7d-ce5bd120997d)
-![Ekran görüntüsü 2025-05-19 174955](https://github.com/user-attachments/assets/ea5d7cfb-5092-412d-b487-9c749a37b6ef)![Ekran görüntüsü 2025-05-19 174452](https://github.com/user-attachments/assets/a0af68cd-5a74-4dc3-8a2c-3ed3604b9afd)
+📸 Ekran Görüntüleri
+![Ekran görüntüsü 2025-05-19 175215](https://github.com/user-attachments/assets/8407ed83-7eed-430e-9d0d-b559f05b44b0)
+![Ekran görüntüsü 2025-05-19 174955](https://gi![Ekran görüntüsü 2025-05-19 174452](https://github.com/user-attachments/assets/d8f657bf-b86f-496b-87f3-75de5e5cf65d)
+thub.com/user-attachments/assets/354e40f9-36ea-4f4d-9517-cc38a8c533cd)
+![Ekran görüntüsü 2025-05-19 174518](https://github.com/user-attachments/assets/59e2a3cd-a4cc-44d0-aa72-b6e093df0e6c)
+![Ekran görüntüsü 2025-05-19 174753](https://github.com/user-attachments/assets/38cb984a-5249-439e-a81d-6350df10387b)
+![image](https://github.com/user-attachments/assets/bccb0ff2-1323-40f7-b447-bf700b9919a8)
 
-37-e9ecf878816d)
-![Ekran görüntüsü 2025-05-19 174518](https://github.com/user-attachments/assets/0d3b17a1-67d6-4685-afe3-e1ca750c122c)
+
+
+
+
+
+
+
 
 
 🧪 API Endpointleri (Backend)
