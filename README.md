@@ -36,7 +36,10 @@ Sipariş durumunu güncelleme (Hazırlanıyor → Yola Çıktı → Teslim Edild
 📸 Ekran Görüntüleri
 ![Ekran görüntüsü 2025-05-19 175215](https://github.com/user-attachments/assets/8407ed83-7eed-430e-9d0d-b559f05b44b0)
 ![Ekran görüntüsü 2025-05-19 174955](https://gi![Ekran görüntüsü 2025-05-19 174452](https://github.com/user-attachments/assets/d8f657bf-b86f-496b-87f3-75de5e5cf65d)
-thub.com/user-attachments/assets/354e40f9-36ea-4f4d-9517-cc38a8c533cd)
+![Ekran görüntüsü 2025-05-19 174955](https://github.com/user-attachments/assets/fe1951a0-4b05-4593-a904-887f1f0a0aef)
+![image](https://github.com/user-attachments/assets/ff235bcc-b019-419f-b011-b3fd448b799b)
+![image](https://github.com/user-attachments/assets/144ae556-1822-480a-a898-c41f89071b28)
+![image](https://github.com/user-attachments/assets/d5a5c3ce-9950-4092-ac50-7a894cedd26b)
 ![Ekran görüntüsü 2025-05-19 174518](https://github.com/user-attachments/assets/59e2a3cd-a4cc-44d0-aa72-b6e093df0e6c)
 ![Ekran görüntüsü 2025-05-19 174753](https://github.com/user-attachments/assets/38cb984a-5249-439e-a81d-6350df10387b)
 ![image](https://github.com/user-attachments/assets/bccb0ff2-1323-40f7-b447-bf700b9919a8)
